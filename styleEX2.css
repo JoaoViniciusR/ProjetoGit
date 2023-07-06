@@ -1,0 +1,21 @@
+h1 {
+    text-align: center
+}
+
+main {
+    padding: 2% 5%;
+}
+
+.botao{
+    border: solid 1px blue;
+    color: blue;
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    display: flex;
+
+}
+.botao:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.2)
+}

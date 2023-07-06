@@ -1,0 +1,47 @@
+.custom-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .custom-button::before,
+  .custom-button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .custom-button::before {
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .custom-button::after {
+    border: 2px solid #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .custom-button:hover::before,
+  .custom-button:focus::before {
+    opacity: 1;
+  }
+  
+  .custom-button:hover::after,
+  .custom-button:focus::after {
+    opacity: 1;
+  }
+  
+  .custom-button:focus {
+    outline: none;
+  }
+  
