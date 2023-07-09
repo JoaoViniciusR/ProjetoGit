@@ -1,57 +1,226 @@
-<!DOCTYPE html>
+<script src="https://cdn02.jotfor.ms/static/prototype.forms.js?3.3.43241" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/static/jotform.forms.js?3.3.43241" type="text/javascript"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+<script src="https://cdn01.jotfor.ms/js/payments/validategateways.js?v=3.3.43241" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.newPaymentUI = true;
+	JotForm.submitError="jumpToFirstError";
 
-<html lang="pt">
-	<head>
-		<meta charset="UTF-8">
-		<title>Exercícios parte 3</title>
-	</head>
-	<body>
-		<header>
-			<h1 style="text-align: center">Exercícios parte 3</h1>
-		</header>
-		<main style="padding: 2% 5%;">
-		
-			<form>
-				<label>Nome:</label>
-				<input type="text">
-				
-				
-				<label>Email:</label>
-				<input type="password">
-				
-				<label>opcoes select:</label>
-				<input type="text">
-				
-				<label class="checkbox">
-					<input type="radio" name="sexo" value="masculino"> Masculino
-				</label>
-				<label class="checkbox">
-					<input type="radio" name="sexo" value="feminino"> Feminino
-				</label>
-				
-				<div>
-					<label for="cidade">Cidade</label>
-					<input type="text">
-				</div>
-				<div>
-					<label for="estado">Estado</label>
-					<select name="estado" id="estado">
-						<option value="">--</option>
-						<option value="PR">PR</option>
-					</select>
-				</div>
-				
-				<label>Mensagem:</label>
-				<textarea cols="35" rows="8"></textarea>
-				
-				<label>Newsletter</label>
-				<label>
-					<input type="checkbox" name="newsletter" value="1"> Gostaria de receber a Newsletter da empresa
-				</label>
-				
-				<input type="submit" value="Enviar">
-			</form>
-			
-		</main>
-	</body>
-</html>
+	JotForm.init(function(){
+	/*INIT-START*/
+      setTimeout(function() {
+          $('input_6').hint('ex: myname@example.com');
+       }, 20);
+if (window.JotForm && JotForm.accessible) $('input_11').setAttribute('tabindex',0);
+	/*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,null,null,{"name":"gender","qid":"3","text":"Genero","type":"control_dropdown"},{"name":"nome","qid":"4","text":"Nome","type":"control_fullname"},null,{"name":"email","qid":"6","subLabel":"example@example.com","text":"E-mail","type":"control_email"},null,{"name":"submit","qid":"8","text":"Submit","type":"control_button"},{"name":"titulo","qid":"9","text":"                                                              EX3","type":"control_head"},{"description":"","name":"endereco","qid":"10","text":"Endereco","type":"control_address"},{"description":"","name":"digiteUma","qid":"11","subLabel":"","text":"Digite uma mensagem","type":"control_textbox"},null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"genero","qid":"24","subLabel":"","text":"Gostaria de receber a Newsletter da empresa?","type":"control_dropdown"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,null,null,{"name":"gender","qid":"3","text":"Genero","type":"control_dropdown"},{"name":"nome","qid":"4","text":"Nome","type":"control_fullname"},null,{"name":"email","qid":"6","subLabel":"example@example.com","text":"E-mail","type":"control_email"},null,{"name":"submit","qid":"8","text":"Submit","type":"control_button"},{"name":"titulo","qid":"9","text":"                                                              EX3","type":"control_head"},{"description":"","name":"endereco","qid":"10","text":"Endereco","type":"control_address"},{"description":"","name":"digiteUma","qid":"11","subLabel":"","text":"Digite uma mensagem","type":"control_textbox"},null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"genero","qid":"24","subLabel":"","text":"Gostaria de receber a Newsletter da empresa?","type":"control_dropdown"}]);}, 20); 
+</script>
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.43241&themeRevisionID=5f30e2a790832f3e96009402"/>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.43241" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.43241" />
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/stylebuilder/donationBox.css?v=3.3.43241">
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Inter, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  
+    }
+  
+    .form-line {
+      margin-top: 12px 36px 12px 36px px;
+      margin-bottom: 12px 36px 12px 36px px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  
+    .form-all {
+      max-width: 752px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 230px;
+    }
+  
+    .form-all {
+      font-size: 16px
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: #fff;
+    }
+  
+    .form-all {
+      color: #2C3345;
+    }
+    .form-header-group .form-header {
+      color: #2C3345;
+    }
+    .form-header-group .form-subHeader {
+      color: #2C3345;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label,
+    span.FITB .qb-checkbox-label,
+    span.FITB .qb-radiobox-label,
+    span.FITB .form-radio label,
+    span.FITB .form-checkbox label,
+    [data-blotid][data-type=checkbox] [data-labelid],
+    [data-blotid][data-type=radiobox] [data-labelid],
+    span.FITB-inptCont[data-type=checkbox] label,
+    span.FITB-inptCont[data-type=radiobox] label {
+      color: #2C3345;
+    }
+    .form-sub-label {
+      color: #464d5f;
+    }
+  
+  .supernova {
+    background-color: #3b2f80;
+  }
+  .supernova body {
+    background: transparent;
+  }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #fff;
+    }
+  
+    .supernova {
+      background-image: none;
+    }
+    #stage {
+      background-image: none;
+    };
+  
+    .form-all {
+      background-image: none;
+    }
+  .form-all:before { content: none; } .form-all { margin-top: 72px; }/*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+.form-label.form-label-auto {
+        
+      display: block;
+      float: none;
+      text-align: left;
+      width: 100%;
+    
+  }
+  
+  .submit-button {
+    background-color: #3b2f80;
+    border: 0;
+  }
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" action="https://submit.jotform.com/submit/231887424248666" method="post" name="form_231887424248666" id="231887424248666" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="231887424248666" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_9" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_9" class="form-header" data-component="header"> EX3</h2>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_fullname" id="id_4"><label class="form-label form-label-top form-label-extended form-label-auto" id="label_4" for="first_4"> Nome<span class="form-required">*</span> </label>
+        <div id="cid_4" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true" class="extended"><span class="form-sub-label-container" style="vertical-align:top" data-input-type="first"><input type="text" id="first_4" name="q4_nome[first]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_4 given-name" size="10" value="" data-component="first" aria-labelledby="label_4 sublabel_4_first" required="" /><label class="form-sub-label" for="first_4" id="sublabel_4_first" style="min-height:13px" aria-hidden="false">Primeiro Nome</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="middle"><input type="text" id="middle_4" name="q4_nome[middle]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_4 additional-name" size="10" value="" data-component="middle" aria-labelledby="label_4 sublabel_4_middle" required="" /><label class="form-sub-label" for="middle_4" id="sublabel_4_middle" style="min-height:13px" aria-hidden="false">Nome do Meio</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="last"><input type="text" id="last_4" name="q4_nome[last]" class="form-textbox validate[required]" data-defaultvalue="" autoComplete="section-input_4 family-name" size="15" value="" data-component="last" aria-labelledby="label_4 sublabel_4_last" required="" /><label class="form-sub-label" for="last_4" id="sublabel_4_last" style="min-height:13px" aria-hidden="false">Sobrenome</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_dropdown" id="id_3"><label class="form-label form-label-top form-label-auto" id="label_3" for="input_3"> Gênero<span class="form-required">*</span> </label>
+        <div id="cid_3" class="form-input-wide jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_3" name="q3_gender" style="width:310px" data-component="dropdown" required="" aria-label="Gênero">
+            <option value="Male">Masculino</option>
+            <option value="Female">Feminino</option>
+            <option selected="" value="N/A">N/A</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_email" id="id_6"><label class="form-label form-label-top form-label-auto" id="label_6" for="input_6"> E-mail<span class="form-required">*</span> </label>
+        <div id="cid_6" class="form-input-wide jf-required" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_6" name="q6_email" class="form-textbox validate[required, Email]" data-defaultvalue="" style="width:310px" size="310" value="" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_6 sublabel_input_6" required="" /><label class="form-sub-label" for="input_6" id="sublabel_input_6" style="min-height:13px" aria-hidden="false">example@example.com</label></span> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_address" id="id_10" data-compound-hint=",,,,Favor selecionar,,Favor selecionar,"><label class="form-label form-label-top form-label-auto" id="label_10" for="input_10_addr_line1"> Endereço<span class="form-required">*</span> </label>
+        <div id="cid_10" class="form-input-wide jf-required" data-layout="full">
+          <div summary="" class="form-address-table jsTest-addressField">
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span class="form-address-line form-address-street-line jsTest-address-lineField"><span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_10_addr_line1" name="q10_endereco[addr_line1]" class="form-textbox validate[required] form-address-line" data-defaultvalue="" autoComplete="section-input_10 address-line1" value="" data-component="address_line_1" aria-labelledby="label_10 sublabel_10_addr_line1" required="" /><label class="form-sub-label" for="input_10_addr_line1" id="sublabel_10_addr_line1" style="min-height:13px" aria-hidden="false">Endereço</label></span></span></div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span class="form-address-line form-address-street-line jsTest-address-lineField"><span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_10_addr_line2" name="q10_endereco[addr_line2]" class="form-textbox form-address-line" data-defaultvalue="" autoComplete="section-input_10 address-line2" value="" data-component="address_line_2" aria-labelledby="label_10 sublabel_10_addr_line2" /><label class="form-sub-label" for="input_10_addr_line2" id="sublabel_10_addr_line2" style="min-height:13px" aria-hidden="false">Endereço (cont.)</label></span></span></div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span class="form-address-line form-address-city-line jsTest-address-lineField "><span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_10_city" name="q10_endereco[city]" class="form-textbox validate[required] form-address-city" data-defaultvalue="" autoComplete="section-input_10 address-level2" value="" data-component="city" aria-labelledby="label_10 sublabel_10_city" required="" /><label class="form-sub-label" for="input_10_city" id="sublabel_10_city" style="min-height:13px" aria-hidden="false">Cidade</label></span></span><span class="form-address-line form-address-state-line jsTest-address-lineField "><span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_10_state" name="q10_endereco[state]" class="form-textbox validate[required] form-address-state" data-defaultvalue="" autoComplete="section-input_10 address-level1" value="" data-component="state" aria-labelledby="label_10 sublabel_10_state" required="" /><label class="form-sub-label" for="input_10_state" id="sublabel_10_state" style="min-height:13px" aria-hidden="false">Estado</label></span></span></div>
+            <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span class="form-address-line form-address-zip-line jsTest-address-lineField "><span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_10_postal" name="q10_endereco[postal]" class="form-textbox validate[required] form-address-postal" data-defaultvalue="" autoComplete="section-input_10 postal-code" value="" data-component="zip" aria-labelledby="label_10 sublabel_10_postal" required="" /><label class="form-sub-label" for="input_10_postal" id="sublabel_10_postal" style="min-height:13px" aria-hidden="false">CEP / Código Postal</label></span></span></div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_11"><label class="form-label form-label-top form-label-auto" id="label_11" for="input_11"> Digite uma mensagem </label>
+        <div id="cid_11" class="form-input-wide" data-layout="half"> <input type="text" id="input_11" name="q11_digiteUma" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" value="" data-component="textbox" aria-labelledby="label_11" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_dropdown" id="id_24"><label class="form-label form-label-top form-label-auto" id="label_24" for="input_24"> Gostaria de receber a Newsletter da empresa?<span class="form-required">*</span> </label>
+        <div id="cid_24" class="form-input-wide jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_24" name="q24_genero" style="width:310px" data-component="dropdown" required="" aria-label="Gostaria de receber a Newsletter da empresa?">
+            <option value="">Favor selecionar</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_8">
+        <div id="cid_8" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_8" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit</button></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+    </ul>
+  </div>
+  <script>
+    JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+    JotForm.poweredByText = "Powered by Jotform";
+  </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="231887424248666" />
+  <script type="text/javascript">
+    var all_spc = document.querySelectorAll("form[id='231887424248666'] .si" + "mple" + "_spc");
+    for (var i = 0; i < all_spc.length; i++)
+    {
+      all_spc[i].value = "231887424248666-231887424248666";
+    }
+  </script>
+  <div class="formFooter-heightMask"></div>
+  <div class="formFooter f6 branding21" style="display: flex!important; opacity: 1!important; visibility: visible!important;">
+    <div class="formFooter-wrapper formFooter-leftSide">
+      <a href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=231887424248666&utm_content=jotform_logo&utm_campaign=powered_by_jotform_le" target="_blank" class="formFooter-logoLink">
+        <img class="formFooter-logo" src="https://cdn.jotfor.ms/assets/img/logo2021/jotform-logo-white.svg" alt="Jotform Logo" style="height: 44px;">
+      </a>
+    </div>
+    <div class="formFooter-wrapper formFooter-rightSide">
+      <span class="formFooter-text">Now create your own Jotform - It’s free!</span>
+      <a class="formFooter-button" href="https://www.jotform.com/?utm_source=formfooter&utm_medium=banner&utm_term=231887424248666&utm_content=jotform_button&utm_campaign=powered_by_jotform_le" target="_blank">Create your own Jotform</a>
+    </div>
+  </div>
+</form><script type="text/javascript">JotForm.ownerView=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.43241"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.43241"></script>
+<script type="text/javascript">JotForm.isNewSACL=true;</script>
