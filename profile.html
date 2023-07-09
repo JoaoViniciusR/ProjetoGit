@@ -1,207 +1,265 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Meu Perfil</title>
 
-		<style>
+<head>
+	<meta charset="UTF-8">
+	<title>Meu Perfil</title>
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-image: url(https://image.api.playstation.com/cdn/UP4122/CUSA13595_00/yf85lLv8DBBzDKKSZrkmxdqZluSbFSU1.png);
+			background-size: cover;
+		}
+
+		main {
+			padding: 2% 5%;
+			display: flex;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		/* Estilos para o cabeçalho */
+		header {
+			background-color: #333333;
+			color: #fff;
+			padding: 20px;
+		}
+
+		header h1 {
+			margin: 0;
+			text-align: center;
+		}
+
+		/* Estilos para as seções */
+		div {
+			display: flex;
+			padding: 1%;
+			margin: 1%;
+			display: block;
+			background-color: #1b2a42;
+		}
+
+		div h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		/* Estilos para a imagem */
+		img {
+			width: 100px;
+			height: auto;
+			border-radius: 50%;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		/* Estilos para a tabela */
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 10px;
+		}
+
+		table th,
+		table td {
+			padding: 8px;
+			border: 1px solid #ddd;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		tbody tr:hover {
+			background-color: #ddd;
+		}
+
+		/* Estilos para o rodapé */
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		footer p {
+			margin: 0;
+		}
+
+		ul {
+			list-style-type: circle;
+		}
+
+		.abilities {
+			list-style-type: square;
+			list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAYRJREFUOE+lkk9LG1EUxc+ZWDGgi3bhKp15mdFmYUOFbIoiUlQQP0FFwZUUChF3Add+ge5dx7qPtEIKdeXKheKiEDOZeS4ttAtRZOTdMim2Scwfm77lu/f83rn3POI/D3voE55tT1a1Pu7U1xXgOs4KgLwfhq/7AVie45wAfEli8TwIDtpBOjrwlHoLwW4sMoKjmg6m/gVAT6kTCLL3IhFrwdd+uRVSd+B53qhE8gKWGYfBOIFXIJYamwWoWcBnEBVjrIokpJJMJmt0bXuOsEoghvpI9GPdwZhSs0akRHD4sRAjZs/RevXPEtPP0zOk2Sc50gtCg2LqIlj7Ctw1peDZ9rSAn7pDZKcahu/icOKHHsToOuqMwEQnFyJm3tf6y329CZDL5Z78uPx+RXKwMwCbvg4+tAW4KTfLhDltEBsCPwV49veuPsJ6e4BSyxQUfxelTKBwHUXfhgYG8yQKAJ62/srmJTrpbYG8sYit8yA4bBwjk8mMRDe370lsVMMgFb8Q138B3k+D4vry0EkAAAAASUVORK5CYII=");
+			list-style-position: inside;
+			padding-inline-start: 20px;
+		}
+
+		.image-center {
+			text-align: center;
+		}
+
+		.col-sm-12 {
+			width: 100%;
+		}
+
+		.col-sm-10 {
+			width: 84%;
+		}
+
+		.col-sm-9 {
+			width: 75%;
+		}
+
+		.col-sm-6 {
+			width: 50%;
+		}
+
+		.col-sm-3 {
+			width: 25%;
+		}
+
+		.col-sm-2 {
+			width: 16%;
+		}
+
+		@media screen and (max-width: 800px) {
+
 			body {
-				font-family: Arial, sans-serif;
-				margin: 0;
-				padding: 0;
-			  }
-			  
-			  main {
-				  padding: 2% 5%;
-				  display: flex;
-			  }
-			  
-			  .container {
-				max-width: 800px;
-				margin: 0 auto;
-				padding: 20px;
-			  }
-			  
-			  /* Estilos para o cabeçalho */
-			  header {
-				background-color: #333;
-				color: #fff;
-				padding: 20px;
-			  }
-			  
-			  header h1 {
-				margin: 0;
-				text-align: center;
-			  }
-			  
-			  /* Estilos para as seções */
-			  div {
-				  display: flex;
-				  padding: 1%;
-				  margin: 1%;
-				  display: block;
-			  }
-			  
-			  div h2 {
-				font-size: 24px;
-				margin-bottom: 10px;
-				text-align: center;
-			  }
-			  
-			  /* Estilos para a imagem */
-			  img {
-				width: 200px;
-				height: auto;
-				border-radius: 50%;
-				margin-bottom: 10px;
-				text-align: center;
-			  }
-			  
-			  /* Estilos para a tabela */
-			  table {
-				width: 100%;
-				border-collapse: collapse;
-				margin-bottom: 10px;
-			  }
-			  
-			  table th, table td {
-				padding: 8px;
-				border: 1px solid #ddd;
-			  }
-			  
-			  tr:nth-child(even) {
-				  background-color: #f2f2f2;
-			  }
-			  
-			  tbody tr:hover {
-				  background-color: #ddd;
-			  }
-			  
-			  /* Estilos para o rodapé */
-			  footer {
-				background-color: #333;
-				color: #fff;
-				padding: 20px;
-				text-align: center;
-			  }
-			  
-			  footer p {
-				margin: 0;
-			  }
-			  
-			  ul {
-				  list-style-type: circle;
-			  }
-			  
-			  .abilities {
-				  list-style-type: square;
-				  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAYRJREFUOE+lkk9LG1EUxc+ZWDGgi3bhKp15mdFmYUOFbIoiUlQQP0FFwZUUChF3Add+ge5dx7qPtEIKdeXKheKiEDOZeS4ttAtRZOTdMim2Scwfm77lu/f83rn3POI/D3voE55tT1a1Pu7U1xXgOs4KgLwfhq/7AVie45wAfEli8TwIDtpBOjrwlHoLwW4sMoKjmg6m/gVAT6kTCLL3IhFrwdd+uRVSd+B53qhE8gKWGYfBOIFXIJYamwWoWcBnEBVjrIokpJJMJmt0bXuOsEoghvpI9GPdwZhSs0akRHD4sRAjZs/RevXPEtPP0zOk2Sc50gtCg2LqIlj7Ctw1peDZ9rSAn7pDZKcahu/icOKHHsToOuqMwEQnFyJm3tf6y329CZDL5Z78uPx+RXKwMwCbvg4+tAW4KTfLhDltEBsCPwV49veuPsJ6e4BSyxQUfxelTKBwHUXfhgYG8yQKAJ62/srmJTrpbYG8sYit8yA4bBwjk8mMRDe370lsVMMgFb8Q138B3k+D4vry0EkAAAAASUVORK5CYII=");
-				  list-style-position: inside;
-				  padding-inline-start: 20px;
-			  }
-			  
-			  .image-center {
-				  text-align: center;
-			  }
-			  
-			  .col-sm-12 {
-				  width: 100%;
-			  }
-			  
-			  .col-sm-10 {
-				  width: 84%;
-			  }
-			  
-			  .col-sm-9 {
-				  width: 75%;
-			  }
-			  
-			  .col-sm-6 {
-				  width: 50%;
-			  }
-			  
-			  .col-sm-3 {
-				  width: 25%;
-			  }
-			  
-			  .col-sm-2 {
-				  width: 16%;
-			  }
-		</style>
-	</head>
-	<body>
-		<header>
-			<h1>Meu Perfil</h1>
-		</header>
+				background-color: #5b83e0;
+			}
 
-		<main>
-			<section>
+			table tbody {
+				background-color: white;
+			}
+
+			table thead tr th {
+				border: 0;
+			}
+
+			main {
+				padding: 1% 2.5%;
+				display: block;
+			}
+
+			.col-sm-12 {
+				width: 100%;
+			}
+
+			.col-sm-10 {
+				width: 100%;
+			}
+
+			.col-sm-9 {
+				width: 100%;
+			}
+
+			.col-sm-6 {
+				width: 100%;
+			}
+
+			.col-sm-3 {
+				width: 100%;
+			}
+
+			.col-sm-2 {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Meu Perfil</h1>
+	</header>
+
+	<main>
+		<div class="col-sm-2">
+			<div class="image-center">
 				<h2>Sobre Mim</h2>
 				<img src="https://th.bing.com/th/id/OIP.vLCyZXhoxBAivBnaILjeiQHaEK?pid=ImgDet&rs=1" alt="Minha Foto">
-                <p>
-                    Bardin Goreksson is a Dawi, and one of the five playable Heroes in Vermintide 2. 
-                    In official media, he is usually seen with a large beard, wielding a Hammer and occasionally a Shield.
-                    He may be the shortest in the group of heroes, but the Dwarf Ranger Bardin Goreksson certainly makes up for it in ferocity, determination and spirit. 
-                    Gregarious, prideful and not afraid to offend, Bardin is frequently seen charging into the thick of battle, axe or hammer in full swing and leaving a trail of Skaven corpses behind him. 
-                    Once the victory is assured, he will be the first back to the pub, roaring and laughing at the top of his lungs in a manner of which only a dwarf is capable.
-                    Bardin arrived in Ubersreik as part of his journey to discover the lost hold of Karak Zorn. 
-                    After the events of Vermintide, Bardin continues to accompany the rest of the heroes while still searching for the lost Dwarven hold.
-                    Based on which Career the player chooses in-game, he is seen as a Ranger Veteran, honing his existing Ranger skills, an Ironbreaker, skilled in underground fighting, a Slayer, who has sworn an oath to only die during combat with a great foe, or an Outcast Engineer, armed with an array of experimental weaponry.
-                </p>
-				<p>
-                    Bardin Goreksson introduced himself to the world as an unstoppable avalanche on the battlefield, an ale-swigging hurricane at the inn, and a steadfast friend by the campfire. A bulwark of comradeliness and good cheer, Bardin became the glue binding our unlikely band of heroes.
-                    Driven by his search for the lost dwarfen hold of Karak Zorn, Bardin has been somewhat side-tracked by the ceaseless Skaven interference. Yet he stays true to his spirit, fighting the good fight as a hero whose deeds do his ancestors proud! [1]
-                </p>
-
-			</section>
-
-			<section>
+			</div>
+			<div>
 				<h2>Dados Pessoais</h2>
 				<ul>
-					<li>TELEFONE</li>
-					<li>EMAIL</li>
+					<li>Telefone</li>
+					<li>E-mail</li>
 				</ul>
-			</section>
-
-			<section>
+			</div>
+			<div>
+				<h2>Habilidades</h2>
+				<ul class="abilities">
+					<li>JAVA</li>
+				</ul>
+			</div>
+			<div>
 				<h2>Links Úteis</h2>
 				<ul>
-					<li><a href="https://www.linkedin.com/in/jo%C3%A3o-vin%C3%ADcius-ros%C3%A1-643a4221a" target="_blank">LinkedIn</a></li>
+					<li><a href="https://www.linkedin.com/in/jo%C3%A3o-vin%C3%ADcius-ros%C3%A1-643a4221a"
+							target="_blank">LinkedIn</a></li>
 					<li><a href="https://github.com/JoaoViniciusR" target="_blank">Git Hub</a></li>
 				</ul>
-			</section>
+			</div>
+		</div>
 
-			<section>
-				<h2>Habilidades</h2>
-				<ul>
-                    <li>
-                        Java
-                    </li>
-				</ul>
-			</section>
-
-			<section>
+		<div class="col-sm-10">
+			<div>
+				<p>
+					Bardin Goreksson is a Dawi, and one of the five playable Heroes in Vermintide 2.
+					In official media, he is usually seen with a large beard, wielding a Hammer and occasionally a
+					Shield.
+					He may be the shortest in the group of heroes, but the Dwarf Ranger Bardin Goreksson certainly makes
+					up for it in ferocity, determination and spirit.
+					Gregarious, prideful and not afraid to offend, Bardin is frequently seen charging into the thick of
+					battle, axe or hammer in full swing and leaving a trail of Skaven corpses behind him.
+					Once the victory is assured, he will be the first back to the pub, roaring and laughing at the top
+					of his lungs in a manner of which only a dwarf is capable.
+					Bardin arrived in Ubersreik as part of his journey to discover the lost hold of Karak Zorn.
+					After the events of Vermintide, Bardin continues to accompany the rest of the heroes while still
+					searching for the lost Dwarven hold.
+					Based on which Career the player chooses in-game, he is seen as a Ranger Veteran, honing his
+					existing Ranger skills, an Ironbreaker, skilled in underground fighting, a Slayer, who has sworn an
+					oath to only die during combat with a great foe, or an Outcast Engineer, armed with an array of
+					experimental weaponry.
+				</p>
+				<p>
+					Bardin Goreksson introduced himself to the world as an unstoppable avalanche on the battlefield, an
+					ale-swigging hurricane at the inn, and a steadfast friend by the campfire. A bulwark of
+					comradeliness and good cheer, Bardin became the glue binding our unlikely band of heroes.
+					Driven by his search for the lost dwarfen hold of Karak Zorn, Bardin has been somewhat side-tracked
+					by the ceaseless Skaven interference. Yet he stays true to his spirit, fighting the good fight as a
+					hero whose deeds do his ancestors proud!
+				</p>
+			</div>
+			<div>
 				<h2>Educação</h2>
 				<table>
-                    <tr>
-                        <td>
-                            Ensino Superior Furb
-                        </td>
-                    </tr>
+					<tr>
+						<td>
+							Ensino Superior Furb
+						</td>
+					</tr>
 				</table>
-			</section>
+			</div>
+		</div>
+	</main>
 
-			<section>
-				<h2>Experiência Profissional</h2>
-				<ul>
-					<li>Ainda não possuo</li>
-				</ul>
-			</section>
-		</main>
+	<footer>
+		<p>&copy; 2023 Meu Perfil</p>
+	</footer>
+</body>
 
-		<footer>
-			<p>&copy; 2023 Meu Perfil</p>
-		</footer>
-	</body>
 </html>
